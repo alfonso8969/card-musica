@@ -45,29 +45,28 @@ figure {
         url('../images/bad-bunny.jpg') right center/cover;
 }
 
-.card.bad-ed-sheeran {
+.card.ed-sheeran {
     background: linear-gradient(90deg, #000, transparent 85%),
         url('../images/ed-sheeran.jpeg') left center/cover;
 }
 
-.card.bad-tylor-swift {
+.card.tylor-swift {
     background: linear-gradient(0deg, #000, transparent 85%),
         url('../images/tylor-swift.jpeg') right center/cover;
         transform: scaleX(-1);
 
 }
 
-.card.bad-tylor-swift .card__info-principal {
+.card.tylor-swift .card__info-principal {
     transform: scaleX(-1);
 }
 
-.card.bad-tylor-swift .card__nombre {
+.card.tylor-swift .card__nombre {
     transform: scaleX(-1);
     text-align: left;
 }
 
-
-.card.bad-bon-scott {
+.card.bon-scott {
     background: linear-gradient(90deg, #000, transparent 85%),
         url('../images/bon-scott.jpeg') right center/cover;
 }
@@ -79,10 +78,10 @@ figure {
 
 .card__info-principal h3 {
     font-family: 'Inter 28pt', sans-serif;
+    max-width: 75%;
     font-size: 2rem;
     font-weight: bold;
     color: #FFF;
-    text-transform: uppercase;
     margin: 0 0 0.5em;
 }
 
@@ -114,6 +113,14 @@ figure {
     margin: 0 0 0.5em;
     align-self: end;
     text-transform: uppercase;
+}
+
+.card__img-dolby {
+    opacity: 0.3;
+    width: 150px;
+    height: 20px;
+    margin-top: 10px;
+    display: block;
 }
 
 /* Grid layout - two columns and two rows */
