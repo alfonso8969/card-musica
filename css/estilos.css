@@ -13,8 +13,6 @@ figure {
     padding: 0;
 }
 
-
-
 /* estilos para header principal */
 .header-principal {
     display: flex;
@@ -53,7 +51,7 @@ figure {
 .card.tylor-swift {
     background: linear-gradient(0deg, #000, transparent 85%),
         url('../images/tylor-swift.jpeg') right center/cover;
-        transform: scaleX(-1);
+    transform: scaleX(-1);
 
 }
 
@@ -63,7 +61,7 @@ figure {
 
 .card.tylor-swift .card__nombre {
     transform: scaleX(-1);
-    text-align: left;
+    align-self: start;
 }
 
 .card.bon-scott {
@@ -78,9 +76,9 @@ figure {
 
 .card__info-principal h3 {
     font-family: 'Inter 28pt', sans-serif;
+    line-height: normal;
     max-width: 75%;
     font-size: 2rem;
-    font-weight: bold;
     color: #FFF;
     margin: 0 0 0.5em;
 }
@@ -108,10 +106,9 @@ figure {
 
 .card__nombre {
     font-family: 'Inter 24pt', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
     color: #eef115;
     margin: 0 0 0.5em;
-    align-self: end;
     text-transform: uppercase;
 }
 
@@ -123,14 +120,14 @@ figure {
     display: block;
 }
 
-/* Grid layout - two columns and two rows */
+
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    grid-template-rows: 1fr 1fr; /* Two equal rows */
-    gap: 20px; /* Space between grid items */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
     width: 100%;
-    height: 400px; /* You can adjust this height as needed */
+    height: 400px;
 }
 
 .grid-item {
@@ -141,41 +138,4 @@ figure {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/* Optional: Different colors for each grid item */
-.grid-item:nth-child(1) {
-    background-color: #e3f2fd;
-}
-
-.grid-item:nth-child(2) {
-    background-color: #f3e5f5;
-}
-
-.grid-item:nth-child(3) {
-    background-color: #e8f5e8;
-}
-
-.grid-item:nth-child(4) {
-    background-color: #fff3e0;
-}
-
-@media screen and (max-width: 875px) {
-    
-    .grid-container {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
-    }
-
-    .card {
-        padding: 1em;
-        min-height: 300px; /* Adjust height for smaller screens */
-    }
-
-    .card__info-principal h3 {
-        font-size: 1.5rem; /* Smaller font size for headings */
-    }
-
-    .card__info-principal p {
-        font-size: 1rem; /* Smaller font size for paragraphs */
-    }
 }
